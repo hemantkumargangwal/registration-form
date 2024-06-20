@@ -1,0 +1,58 @@
+<div class="overlay">
+
+    <div class="registration-container">
+
+
+        <h2>Registration Form</h2>
+        <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+            <div>
+                <label for="fname">First Name:</label>
+                <input id="fname" formControlName="fname" type="text">
+                <div *ngIf="submitted " class="error">
+
+                </div>
+            </div>
+
+            <div>
+                <label for="lname">Last Name:</label>
+                <input id="lname" formControlName="lname" type="text">
+                <div *ngIf="submitted" class="error">
+
+                </div>
+            </div>
+
+            <div>
+                <label for="mobile">Mobile:</label>
+                <input id="mobile" formControlName="mobile" type="text">
+                <div *ngIf="submitted " class="error">
+
+                </div>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input id="email" formControlName="email" type="email">
+                <div *ngIf="submitted " class="error">
+                </div>
+            </div>
+
+            <div>
+                <label for="username">Username:</label>
+                <input id="username" formControlName="username" type="text">
+                <div *ngIf="submitted " class="error">
+
+                </div>
+            </div>
+
+            <div>
+                <label for="password">Password:</label>
+                <input id="password" formControlName="password" type="password">
+                <div *ngIf="submitted " class="error">
+
+                </div>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</div>
